@@ -1,0 +1,12 @@
+// ==UserScript==
+// @name         OVERLOAD_ZATAZ
+// @namespace    http://tampermonkey.net/
+// @version      2026-03-04
+// @description  Nothing makes Damien to force him to publish articles on the Web: so, don't force us advs, we only want to visit a clean web page, thx!
+// @author       GrantHalf
+// @match        https://www.zataz.com
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=zataz.com
+// @grant        none
+// ==/UserScript==
+
+(function(){function u(){var s=document.createElement("style");s.textContent="html,body,*{overflow:auto!important;overscroll-behavior:auto!important;}";document.head.appendChild(s);var b=["no-scroll","overflow-hidden","modal-open","disable-scroll","stop-scrolling","scroll-lock","lock-scroll","fixed","is-locked"];document.querySelectorAll("*").forEach(function(e){b.forEach(function(c){e.classList.remove(c);});var cs=getComputedStyle(e);if(cs.overflow==="hidden"||cs.overflowX==="hidden"||cs.overflowY==="hidden"){e.style.overflow="auto";e.style.overflowX="auto";e.style.overflowY="auto";}if((cs.position==="fixed"||cs.position==="absolute")&&parseInt(cs.zIndex)>1000&&(cs.width==="100%"||cs.height==="100%")){e.remove();}});document.documentElement.removeAttribute("style");document.body.removeAttribute("style");window.onwheel=document.onwheel=window.onmousewheel=document.onmousewheel=window.ontouchmove=document.ontouchmove=null;}function o(){document.querySelectorAll('[class*="mfp-bg rb-popup-center site-access-popup mfp-ready"]').forEach(function(e){e.remove();});document.querySelectorAll('[class*="mfp-wrap mfp-auto-cursor rb-popup-center site-access-popup mfp-ready"]').forEach(function(e){e.remove();});}function run(){u();o();}var i=document.createElement("div");i.textContent="🔒";i.style="position:fixed;bottom:20px;right:20px;width:40px;height:40px;background:#3b82f6;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:999999999;font-size:22px;box-shadow:0 2px 6px rgba(0,0,0,0.3);opacity:0.5;transition:opacity .2s;";i.onmouseenter=function(){i.style.opacity='1';};i.onmouseleave=function(){i.style.opacity='0.5';};i.onclick=function(){run();};document.body.appendChild(i);run();setTimeout(run,2000);})();

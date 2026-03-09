@@ -1,0 +1,18 @@
+// ==UserScript==
+// @name         DISPLAY_SCRIPTS
+// @namespace    http://tampermonkey.net/
+// @version      2026-03-04
+// @description  try to take over the world!
+// @author       You
+// @match        https://*/*
+// @match        http://localhost:8000/*
+// @match        http://local.test:8000/*
+// @match        https://copilot.microsoft.com/*
+// @icon        data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMwMDAiLz4KPHRleHQgeD0iMTQiIHk9IjM4IiBmb250LXNpemU9IjMyIiBmb250LWZhbWlseT0iQ29uc29sYXMiIGZpbGw9IiMwZGYwMDAiPj48L3RleHQ+Cjwvc3ZnPg==
+// @grant        none
+// ==/UserScript==
+
+// CoPilot can help you with any update
+// On local, you can encounter some kind of tiny issue: that's why you see below few lines about localhost or anything else like this
+(function(){var old=document.getElementById("__scriptMonitorBox");if(old){old.remove();window.__SM_OBS&&window.__SM_OBS.disconnect();window.eval=window.__SM_EVAL;window.Function=window.__SM_FUNC;return;}function log(m){logBox.innerHTML+="<div>"+m+"</div>";}var box=document.createElement("div");box.id="__scriptMonitorBox";box.style="position:fixed;top:10px;left:10px;width:360px;height:260px;background:rgba(0,0,0,0.85);color:#0f0;font:12px monospace;z-index:2147483647;border:1px solid #0f0;resize:both;overflow:hidden;padding:0;";var header=document.createElement("div");header.style="background:#222;padding:5px;cursor:move;display:flex;gap:5px;";var copy=document.createElement("button");copy.textContent="Copier";copy.style="flex:1;background:#0f0;color:#000;border:none;cursor:pointer;height:24px;font-size:12px;";var close=document.createElement("button");close.textContent="Fermer";close.style="flex:1;background:#f00;color:#fff;border:none;cursor:pointer;height:24px;font-size:12px;";var logBox=document.createElement("div");logBox.style="height:calc(100% - 34px);overflow-y:auto;overflow-x:hidden;padding:5px;white-space:normal;word-break:break-word;";header.appendChild(copy);header.appendChild(close);box.appendChild(header);box.appendChild(logBox);document.body.appendChild(box);copy.onclick=function(){navigator.clipboard.writeText(logBox.innerText);};close.onclick=function(){box.remove();window.__SM_OBS&&window.__SM_OBS.disconnect();window.eval=window.__SM_EVAL;window.Function=window.__SM_FUNC;};let ox=0,oy=0,drag=false;header.onmousedown=e=>{drag=true;ox=e.clientX-box.offsetLeft;oy=e.clientY-box.offsetTop;};document.onmouseup=()=>drag=false;document.onmousemove=e=>{if(drag){box.style.left=(e.clientX-ox)+"px";box.style.top=(e.clientY-oy)+"px";}};window.__SM_EVAL=window.eval;window.__SM_FUNC=window.Function;window.eval=function(x){log("eval() exécuté : "+x);return window.__SM_EVAL(x);};window.Function=function(){log("Function() exécuté : "+[].slice.call(arguments).join(" | "));return window.__SM_FUNC.apply(this,arguments);};var obs=new MutationObserver(function(m){m.forEach(function(y){y.addedNodes.forEach(function(n){if(n.tagName==="SCRIPT"){if(n.src){log("Script chargé : "+n.src);}else{log("Script inline détecté : "+(n.textContent.slice(0,200)||"[vide]"));}}});});});window.__SM_OBS=obs;obs.observe(document.documentElement,{childList:true,subtree:true});log("🔎 Script monitor actif — déplaçable, sans scroll horizontal");})();
+
