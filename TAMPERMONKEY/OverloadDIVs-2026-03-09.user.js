@@ -19,12 +19,12 @@
 (function(){function kill_voici(){document.querySelectorAll('iframe[src*="consent.voici.fr"], div[id^="img_"]').forEach(e=>e.remove());}kill_voici();new MutationObserver(()=>kill_voici()).observe(document.documentElement,{childList:true,subtree:true});})();
 
 // NUMERAMA
-(function(){function kill_numerama(){document.querySelectorAll('#react-cookies-popin-root,dialog[aria-labelledby="cookies-popin-title"]').forEach(e=>e.remove());}kill_numerama();new MutationObserver(()=>kill_numerama()).observe(document.documentElement,{childList:true,subtree:true});})();
+(function(){function kill_numerama(){document.querySelectorAll('#react-cookies-popin-root,dialog[aria-labelledby="cookies-popin-*"]').forEach(e=>e.remove());}kill_numerama();new MutationObserver(()=>kill_numerama()).observe(document.documentElement,{childList:true,subtree:true});})();
 
 
 // Other Websites "Cookies Wall" removed without any additional line for them:
 // FRANDROID
 // PARIS MATCH
 
-// NOTE: Browsers from smartphones could have a different behavior
+// NOTE: Browsers from smartphones could have a different behavior. Scripts try to be as generic as possible.
 
