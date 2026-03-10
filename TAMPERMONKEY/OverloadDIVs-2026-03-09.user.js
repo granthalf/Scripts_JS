@@ -21,12 +21,12 @@
 // NUMERAMA
 (function(){function kill_numerama(){document.querySelectorAll('#react-cookies-popin-root,dialog[aria-labelledby="cookies-popin-*"]').forEach(e=>e.remove());}kill_numerama();new MutationObserver(()=>kill_numerama()).observe(document.documentElement,{childList:true,subtree:true});})();
 
-
-// Other Websites "Cookies Wall" removed a div (only div, not cookies!!!) without any additional line for them:
-// FRANDROID
-// PARIS MATCH
-
 // NOTE: Browsers from smartphones could have a different behavior. Scripts try to be as generic as possible.
+
+// Other Websites "Cookies Wall" removed a div (only div, not cookies!!!) without any additional line for them.
+// To understand  which sites could use these filters, we need to investigate about what technical concept have been pushed.
+
+// ------------------------------------------------------------------------------------------------
 
 // /!\ ILLEGAL SITES /!\
 // These websites collect cookies without collect the consent user! By Default, they force the consent.
@@ -42,9 +42,20 @@
 // [LVMH] CHALLENGES.fr: you find a property cookie "euconsent-v2"
 // [LVMH] PARIS MATCH: you find a property cookie "euconsent-v2"
 
+// ------------------------------------------------------------------------------------------------
+
 // BOLORRE GROUP OWNS THESE MAGASINES (same behavior expected)
 // Ça m'intéresse, Capital, CuisineActuelle, Éditions Prisma, Femme actuelle, Geo, National Geographic, Oh! My mag, Passeport santé, Télé2Semaines, Télé Loisirs, Télé Z, Turbo, TV Grandes Chaines, Voici
 // SOURCE: https://desarmerbollore.net
+
+// ------------------------------------------------------------------------------------------------
+
+// Technical cookie "euconsent-v2" is from a company called "IAB Europe".
+// It's Cookie Didomi: https://support.didomi.io/didomi-cookies-storage-1
+// Belgium has initiated legal proceedings against this company for violation of GDPR. In 2023. Company is still active. Cookie too.
+// SOURCE: https://www.autoriteprotectiondonnees.be/citoyen/iab-europe-est-tenue-responsable-d-un-mecanisme-qui-viole-le-rgpd
+
+// ------------------------------------------------------------------------------------------------
 
 // SITES FULLY RESPECT
 // These websites don't collect cookies without consent user.
