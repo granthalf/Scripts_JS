@@ -30,10 +30,11 @@
 
 // /!\ ILLEGAL SITES /!\
 // These websites collect cookies without collect the consent user! By Default, they force the consent.
-// CAPITAL, VOICI, NUMERAMA, PARIS MATCH
+// CAPITAL, VOICI, FRANDROID, NUMERAMA, CLUBIC, LEMON, CHALLENGES, PARIS MATCH
 //
 // How to know? Watch cookie from the site. I don't have any option to refuse.
-// VOICI: you find a property cookie "*id_cached_consent_data_exp" and "*id_cached_consent_data"
+// [BOLLORE] CAPITAL: you find a property cookie "*id_cached_consent_data_exp" and "*id_cached_consent_data"
+// [BOLLORE] VOICI: you find a property cookie "*id_cached_consent_data_exp" and "*id_cached_consent_data"
 // [HUMANOID] FRANDROID: you find a property cookie "euconsent-v2"
 // [HUMANOID] NUMERAMA: you find a property cookie "euconsent-v2"
 // [HUMANOID] CLUBIC: you find a property cookie "euconsent-v2"
@@ -41,10 +42,14 @@
 // [LVMH] CHALLENGES.fr: you find a property cookie "euconsent-v2"
 // [LVMH] PARIS MATCH: you find a property cookie "euconsent-v2"
 
+// BOLORRE GROUP OWNS THESE MAGASINES (same behavior expected)
+// Ça m'intéresse, Capital, CuisineActuelle, Éditions Prisma, Femme actuelle, Geo, National Geographic, Oh! My mag, Passeport santé, Télé2Semaines, Télé Loisirs, Télé Z, Turbo, TV Grandes Chaines, Voici
+// SOURCE: https://desarmerbollore.net
 
 // SITES FULLY RESPECT
 // These websites don't collect cookies without consent user.
 // Use Extension Ghostery if needed.
 //
 // [LVMH] SCIENCESETAVENIR
+// [INDEP] MEDIAPART
 
