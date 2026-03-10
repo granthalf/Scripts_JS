@@ -56,7 +56,7 @@ Try with a browser in a mobile phone?
       Nowhere it has been writen Internet pages will be mandatory payed. If you force users to pay, perhaps it means your Business Plan is not so well.
       You want pay? Do the choice and close public visibility. That's All. Don't do Half, eh eh.
       That's my opinion: if any customer or company had a contract with me, I will do the job (even to set up a cookie wall). But my analyze on this topic is very clear:
-      Or you do a cookie wall and it will be any way to remove it (no wall could stay forever, keep this in mind). Or you close your website from publis and you manage only any private acess.
+      Or you do a cookie wall and it will be any way to remove it (no wall could stay forever, keep this in mind). Or you close your website from public and you manage only any private acess.
 
 
 ```
