@@ -22,9 +22,29 @@
 (function(){function kill_numerama(){document.querySelectorAll('#react-cookies-popin-root,dialog[aria-labelledby="cookies-popin-*"]').forEach(e=>e.remove());}kill_numerama();new MutationObserver(()=>kill_numerama()).observe(document.documentElement,{childList:true,subtree:true});})();
 
 
-// Other Websites "Cookies Wall" removed without any additional line for them:
+// Other Websites "Cookies Wall" removed a div (only div, not cookies!!!) without any additional line for them:
 // FRANDROID
 // PARIS MATCH
 
 // NOTE: Browsers from smartphones could have a different behavior. Scripts try to be as generic as possible.
+
+// /!\ ILLEGAL SITES /!\
+// These websites collect cookies without collect the consent user! By Default, they force the consent.
+// CAPITAL, VOICI, NUMERAMA, PARIS MATCH
+//
+// How to know? Watch cookie from the site. I don't have any option to refuse.
+// VOICI: you find a property cookie "*id_cached_consent_data_exp" and "*id_cached_consent_data"
+// [HUMANOID] FRANDROID: you find a property cookie "euconsent-v2"
+// [HUMANOID] NUMERAMA: you find a property cookie "euconsent-v2"
+// [HUMANOID] CLUBIC: you find a property cookie "euconsent-v2"
+// [HUMANOID] LEMON.fr: you find a property cookie "euconsent-v2"
+// [LVMH] CHALLENGES.fr: you find a property cookie "euconsent-v2"
+// [LVMH] PARIS MATCH: you find a property cookie "euconsent-v2"
+
+
+// SITES FULLY RESPECT
+// These websites don't collect cookies without consent user.
+// Use Extension Ghostery if needed.
+//
+// [LVMH] SCIENCESETAVENIR
 
