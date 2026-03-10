@@ -22,5 +22,9 @@
 (function(){function kill_numerama(){document.querySelectorAll('#react-cookies-popin-root,dialog[aria-labelledby="cookies-popin-title"]').forEach(e=>e.remove());}kill_numerama();new MutationObserver(()=>kill_numerama()).observe(document.documentElement,{childList:true,subtree:true});})();
 
 
-Other Websites "Cookies Wall" removed without any additional line for them:
+// Other Websites "Cookies Wall" removed without any additional line for them:
 // FRANDROID
+// PARIS MATCH
+
+// NOTE: Browsers from smartphones could have a different behavior
+
