@@ -93,7 +93,7 @@ B. This Test file is ready to use with these features:
 - this file has trace into console.logs to know about cookies from the page loaded
 
 C. Open CMD, go to Node.JS directory, launch:
-node ./jsfiles/<jsfile>.js
+node .\jsfiles\<jsfile>.js
 
 
 
@@ -106,4 +106,5 @@ node ./jsfiles/<jsfile>.js
 
 
 ```
+
 
