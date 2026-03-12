@@ -13,7 +13,7 @@ Differents editors use different technical cookies.
 
 Cookie				Role							Notes
 CookieConsent			Consent preferences stockage				Usual
-CookieConsentBulkTicket		Gestion groupée du consentement				Rare
+CookieConsentBulkTicket		Consent group managed					Rare
 consentUUID			ID for consent						What we See on the Web
 CybotCookiebotDialog		State of banner						Optionnal
 CybotCookiebotDialogShown	Banner has been displayed				Optionnal
