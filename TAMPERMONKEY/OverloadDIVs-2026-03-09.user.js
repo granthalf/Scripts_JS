@@ -28,8 +28,8 @@
 
 // ------------------------------------------------------------------------------------------------
 
-// /!\ ILLEGAL SITES /!\
-// These websites collect cookies without collect the consent user! By Default, they force the consent.
+// /!\ [ILLEGAL SITES ?] /!\
+// Are these websites collect cookies without collect the consent user? By Default, it seems they force the consent. Project "Check Cookies" raised.
 // CAPITAL, VOICI, FRANDROID, NUMERAMA, CLUBIC, LEMON, CHALLENGES, PARIS MATCH
 //
 // How to know? Watch cookie from the site. I don't have any option to refuse.
