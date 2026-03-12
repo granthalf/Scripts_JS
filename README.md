@@ -37,6 +37,9 @@ Try with a browser in a mobile phone?
   E. HIDE_GOOGLE_CNCT-2026-03-10.user.js
     The G-Connection-Google-Killer Script: when you activate it, it will remove the pop-up asking to connect with a google account. Very Annoying.
 
+  F. DETECT_CMP-2026-03-12.user.js
+    The Cookie-Informations Script: when you activate it, it will display informations about the CMP detected and all we can find from cookies used by the website.
+
 
 
 ---------------------------------------------------------------------------
