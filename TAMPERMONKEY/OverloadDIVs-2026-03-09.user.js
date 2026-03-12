@@ -24,6 +24,12 @@
 // RTL.BE
 (function(){function kill_rtlbe(){document.querySelectorAll('#didomi-host,dialog[aria-labelledby="didomi*"]').forEach(e=>e.remove());}kill_rtlbe();new MutationObserver(()=>kill_rtlbe()).observe(document.documentElement,{childList:true,subtree:true});})();
 
+// AUTONEWS
+(function(){var k=setInterval(function(){document.querySelectorAll('iframe.swg-dialog,iframe[title*="abonner"],iframe[title*="Google"]').forEach(e=>e.remove());document.querySelectorAll('swg-popup-background').forEach(e=>e.remove());document.documentElement.classList.remove('swg-disable-scroll');},400);setTimeout(()=>clearInterval(k),60000);})();
+
+// L EQUIPE
+(function(){var k=setInterval(function(){document.documentElement.classList.remove('no-scroll');var i=document.getElementById('island-8');if(i&&i.parentNode)i.parentNode.removeChild(i);var b=document.getElementById('OfferBanner');if(b&&b.parentNode)b.parentNode.removeChild(b);},400);setTimeout(function(){clearInterval(k);},30000);})();
+
 // NOTE: Browsers from smartphones could have a different behavior. Scripts try to be as generic as possible.
 
 // Other Websites "Cookies Wall" removed a div (only div, not cookies!!!) without any additional line for them.
