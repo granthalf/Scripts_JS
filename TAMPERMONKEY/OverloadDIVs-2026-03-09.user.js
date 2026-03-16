@@ -77,7 +77,9 @@
 // ------------------------------------------------------------------------------------------------
 
 // DC COMPANY OWNS THESE MAGASINES (same behavior expected)
-// Konbini, Gorafi, 
+// Konbini, Gorafi
+
+// ------------------------------------------------------------------------------------------------
 
 // SITES FULLY RESPECT
 // These websites don't collect cookies without consent user.
