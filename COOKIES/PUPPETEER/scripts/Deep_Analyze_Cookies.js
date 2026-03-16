@@ -9,11 +9,16 @@ if (!url) {
   process.exit(1);
 }
 
-// How to launch?
-// With Puppeteer
-// With NodeJS
-// CMD, cd "directory for NodeJS"
-// node .\jsfiles\Deep_Analyze_Cookies.js
+function getRootDomain(url) {
+  const hostname = new URL(url).hostname; // ex: "www.google.com"
+  const parts = hostname.replace(/^www\./, "").split("."); // ex: ["google","com"]
+  
+  if (parts.length >= 2) {
+    return parts[parts.length - 2]; // ex: "google"
+  }
+
+  return hostname; // fallback
+}
 
 (async () => {
   const browser = await puppeteer.launch({
@@ -22,6 +27,7 @@ if (!url) {
     args: ["--headless=new"]
   });
 
+  const rootdomain = getRootDomain(url);
   const page = await browser.newPage();
   //const url = "https://www.setyoururlpathhere.com"; // Set your URL here (replace)
   await page.goto(url, { waitUntil: "networkidle2" });
@@ -30,7 +36,13 @@ if (!url) {
   const cookies = await page.cookies();
 
   // --- Cookies are exported raw ---
-  fs.writeFileSync("deep__cookies.json", JSON.stringify(cookies, null, 2));
+    const data = {
+    url,
+    decodeUrl: "https://iabtcf.com/#/decode",
+    cookies
+  };
+
+  fs.writeFileSync("deep__cookies_" + rootdomain + ".json", JSON.stringify(data, null, 2));
 
   // --- Category ---
   const analyticsPatterns = [/ga/i, /gid/i, /utm/i, /_fbp/i, /_cl/i];
@@ -82,8 +94,8 @@ if (!url) {
   fs.writeFileSync("deep__rapport_cookies.json", JSON.stringify(rapport, null, 2));
 
   console.log("Analyze achieved.");
-  console.log("Cookies exported into deep__cookies.json");
-  console.log("Rapport exported int deep__rapport_cookies.json");
+  console.log("Cookies exported into deep__cookies_" + rootdomain + ".json");
+  console.log("Rapport exported int deep__rapport_cookies_" + rootdomain + ".json");
 
   await browser.close();
 })();
