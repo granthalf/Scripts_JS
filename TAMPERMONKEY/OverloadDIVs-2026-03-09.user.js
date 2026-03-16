@@ -38,8 +38,8 @@
 // ------------------------------------------------------------------------------------------------
 
 // /!\ [ILLEGAL SITES ?] /!\
-// Are these websites collect cookies without collect the consent user? By Default, it seems they force the consent. Project "Check Cookies" raised.
-// CAPITAL, VOICI, FRANDROID, NUMERAMA, CLUBIC, LEMON, CHALLENGES, PARIS MATCH
+// Are these websites collect cookies without collect the consent user? By Default, it seems they force the consent. Project "Check Cookies" raised in order to have elements for answering this question.
+// CAPITAL, VOICI, FRANDROID, NUMERAMA, CLUBIC, LEMON, CHALLENGES, PARIS MATCH, DOCTISSIMO
 //
 // How to know? Watch cookie from the site. I don't have any option to refuse.
 // [BOLLORE] CAPITAL: you find a property cookie "*id_cached_consent_data_exp" and "*id_cached_consent_data"
@@ -50,6 +50,7 @@
 // [HUMANOID] LEMON.fr: you find a property cookie "euconsent-v2"
 // [LVMH] CHALLENGES.fr: you find a property cookie "euconsent-v2"
 // [LVMH] PARIS MATCH: you find a property cookie "euconsent-v2"
+// [REWORLD MEDIA] DOCTISSIMO: : you find a cookie named "didomi_token"
 
 // ------------------------------------------------------------------------------------------------
 
@@ -65,6 +66,18 @@
 // SOURCE: https://www.autoriteprotectiondonnees.be/citoyen/iab-europe-est-tenue-responsable-d-un-mecanisme-qui-viole-le-rgpd
 
 // ------------------------------------------------------------------------------------------------
+
+// REWORLD MEDIA OWNS THESE MAGASINES (same behavior expected)
+// 2022: Aufeminin, Marmiton.org, Doctissimo, Gamekult
+// Technical cookie "euconsent-v2" is from a company called "IAB Europe".
+// It's Cookie Didomi: https://support.didomi.io/didomi-cookies-storage-1
+// Belgium has initiated legal proceedings against this company for violation of GDPR. In 2023. Company is still active. Cookie too.
+// SOURCE: https://www.autoriteprotectiondonnees.be/citoyen/iab-europe-est-tenue-responsable-d-un-mecanisme-qui-viole-le-rgpd
+
+// ------------------------------------------------------------------------------------------------
+
+// DC COMPANY OWNS THESE MAGASINES (same behavior expected)
+// Konbini, Gorafi, 
 
 // SITES FULLY RESPECT
 // These websites don't collect cookies without consent user.
