@@ -1,6 +1,14 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 
+// Get URL as Parameter
+const url = process.argv[2];
+
+if (!url) {
+  console.error("❌ NO URL given. Use : node test.js https://example.com");
+  process.exit(1);
+}
+
 // How to launch?
 // With Puppeteer
 // With NodeJS
@@ -15,7 +23,7 @@ const fs = require('fs');
   });
 
   const page = await browser.newPage();
-  const url = "https://www.setyoururlpathhere.com"; // Set your URL here (replace)
+  //const url = "https://www.setyoururlpathhere.com"; // Set your URL here (replace)
   await page.goto(url, { waitUntil: "networkidle2" });
 
   // --- Get cookies ---
