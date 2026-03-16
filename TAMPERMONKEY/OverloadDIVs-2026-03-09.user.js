@@ -55,7 +55,7 @@
 // [HUMANOID] LEMON.fr: you find a property cookie "euconsent-v2"
 // [LVMH] CHALLENGES.fr: you find a property cookie "euconsent-v2"
 // [LVMH] PARIS MATCH: you find a property cookie "euconsent-v2"
-// [REWORLD MEDIA] DOCTISSIMO: : you find a property cookie "euconsent-v2" (+ cookie named "didomi_token")
+// [REWORLD MEDIA] DOCTISSIMO: : you find a property cookie "euconsent-v2" (+ cookie named "didomi_token") => consent set default by true /!\ (see decode didomi below)
 
 // ------------------------------------------------------------------------------------------------
 
@@ -67,6 +67,7 @@
 
 // Technical cookie "euconsent-v2" is from a company called "IAB Europe".
 // It's Cookie Didomi: https://support.didomi.io/didomi-cookies-storage-1
+// To Decode Didomi Token: https://iabtcf.com/#/decode
 // Belgium has initiated legal proceedings against this company for violation of GDPR. In 2023. Company is still active. Cookie too.
 // SOURCE: https://www.autoriteprotectiondonnees.be/citoyen/iab-europe-est-tenue-responsable-d-un-mecanisme-qui-viole-le-rgpd
 
