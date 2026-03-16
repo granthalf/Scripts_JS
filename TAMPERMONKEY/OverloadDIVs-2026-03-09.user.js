@@ -50,7 +50,7 @@
 // [HUMANOID] LEMON.fr: you find a property cookie "euconsent-v2"
 // [LVMH] CHALLENGES.fr: you find a property cookie "euconsent-v2"
 // [LVMH] PARIS MATCH: you find a property cookie "euconsent-v2"
-// [REWORLD MEDIA] DOCTISSIMO: : you find a cookie named "didomi_token"
+// [REWORLD MEDIA] DOCTISSIMO: : you find a property cookie "euconsent-v2" (+ cookie named "didomi_token")
 
 // ------------------------------------------------------------------------------------------------
 
