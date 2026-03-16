@@ -30,6 +30,11 @@
 // L EQUIPE
 (function(){var k=setInterval(function(){document.documentElement.classList.remove('no-scroll');var i=document.getElementById('island-8');if(i&&i.parentNode)i.parentNode.removeChild(i);var b=document.getElementById('OfferBanner');if(b&&b.parentNode)b.parentNode.removeChild(b);},400);setTimeout(function(){clearInterval(k);},30000);})();
 
+// LAROUSSE
+(function(){document.querySelectorAll('#poool-widget,div[id^="poool"],div[class*="p3-"]').forEach(e=>e.remove());})();
+(function(){function kill(){document.querySelectorAll('#off_onetrust-banner-sdk,#onetrust-banner-sdk,[id*="onetrust"],[class*="onetrust"],[class^="ot-"],[class*=" ot-"]').forEach(e=>e.remove());}kill();new MutationObserver(kill).observe(document.documentElement,{childList:true,subtree:true});})();
+(function(){function unblur(){document.querySelectorAll('div.wrapper').forEach(e=>{e.style.filter='none';e.style.webkitFilter='none';e.style.mozFilter='none';e.style.oFilter='none';e.style.msFilter='none';});}unblur();new MutationObserver(unblur).observe(document.documentElement,{attributes:true,childList:true,subtree:true});})();
+
 // NOTE: Browsers from smartphones could have a different behavior. Scripts try to be as generic as possible.
 
 // Other Websites "Cookies Wall" removed a div (only div, not cookies!!!) without any additional line for them.
