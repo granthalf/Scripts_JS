@@ -35,6 +35,10 @@
 (function(){function kill(){document.querySelectorAll('#onetrust-banner-sdk,#onetrust-banner-sdk,[id*="onetrust"],[class*="onetrust"],[class^="ot-"],[class*=" ot-"]').forEach(e=>e.remove());}kill();new MutationObserver(kill).observe(document.documentElement,{childList:true,subtree:true});})();
 (function(){function unblur(){document.querySelectorAll('div.wrapper').forEach(e=>{e.style.filter='none';e.style.webkitFilter='none';e.style.mozFilter='none';e.style.oFilter='none';e.style.msFilter='none';});}unblur();new MutationObserver(unblur).observe(document.documentElement,{attributes:true,childList:true,subtree:true});})();
 
+// LE PROGRES
+(function(){var iframes=[...document.querySelectorAll('iframe')];iframes.forEach(function(f){var s=f.getAttribute('src')||'';if(s.includes('ultimedia.com')||f.classList.contains('digitekaContent')){f.remove();}});})();
+(function(){document.body.classList.remove('didomi-popup-open');})();
+
 // NOTE: Browsers from smartphones could have a different behavior. Scripts try to be as generic as possible.
 
 // Other Websites "Cookies Wall" removed a div (only div, not cookies!!!) without any additional line for them.
