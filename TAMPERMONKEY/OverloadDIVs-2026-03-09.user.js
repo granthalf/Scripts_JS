@@ -39,6 +39,10 @@
 (function(){var iframes=[...document.querySelectorAll('iframe')];iframes.forEach(function(f){var s=f.getAttribute('src')||'';if(s.includes('ultimedia.com')||f.classList.contains('digitekaContent')){f.remove();}});})();
 (function(){document.body.classList.remove('didomi-popup-open');})();
 
+// LE CRABE
+(function(){document.querySelectorAll('div[id^="__abconsent-cmp"]').forEach(e=>e.remove());})();
+(function(){document.documentElement.removeAttribute('class');})();
+
 // NOTE: Browsers from smartphones could have a different behavior. Scripts try to be as generic as possible.
 
 // Other Websites "Cookies Wall" removed a div (only div, not cookies!!!) without any additional line for them.
