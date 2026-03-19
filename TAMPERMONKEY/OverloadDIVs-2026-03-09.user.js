@@ -12,16 +12,16 @@
 
 // CoPilot can update these scripts easily, guys!
 
-// CAPITAL
+// CAPITAL => concerning iframe subdomain "consent"
 (function(){function kill_capital(){document.querySelectorAll('iframe[src*="consent.capital.fr"], div[id^="img_"]').forEach(e=>e.remove());}kill_capital();new MutationObserver(()=>kill_capital()).observe(document.documentElement,{childList:true,subtree:true});})();
 
-// VOICI
+// VOICI => concerning popin
 (function(){function kill_voici(){document.querySelectorAll('iframe[src*="consent.voici.fr"], div[id^="img_"]').forEach(e=>e.remove());}kill_voici();new MutationObserver(()=>kill_voici()).observe(document.documentElement,{childList:true,subtree:true});})();
 
 // NUMERAMA
 (function(){function kill_numerama(){document.querySelectorAll('#react-cookies-popin-root,dialog[aria-labelledby="cookies-popin-*"]').forEach(e=>e.remove());}kill_numerama();new MutationObserver(()=>kill_numerama()).observe(document.documentElement,{childList:true,subtree:true});})();
 
-// RTL.BE
+// RTL.BE => concerning didomi
 (function(){function kill_rtlbe(){document.querySelectorAll('#didomi-host,dialog[aria-labelledby="didomi*"]').forEach(e=>e.remove());}kill_rtlbe();new MutationObserver(()=>kill_rtlbe()).observe(document.documentElement,{childList:true,subtree:true});})();
 
 // AUTONEWS
@@ -30,18 +30,20 @@
 // L EQUIPE
 (function(){var k=setInterval(function(){document.documentElement.classList.remove('no-scroll');var i=document.getElementById('island-8');if(i&&i.parentNode)i.parentNode.removeChild(i);var b=document.getElementById('OfferBanner');if(b&&b.parentNode)b.parentNode.removeChild(b);},400);setTimeout(function(){clearInterval(k);},30000);})();
 
-// LAROUSSE
+// LAROUSSE => all technic with onetrust
 (function(){document.querySelectorAll('#poool-widget,div[id^="poool"],div[class*="p3-"]').forEach(e=>e.remove());})();
 (function(){function kill(){document.querySelectorAll('#onetrust-banner-sdk,#onetrust-banner-sdk,[id*="onetrust"],[class*="onetrust"],[class^="ot-"],[class*=" ot-"]').forEach(e=>e.remove());}kill();new MutationObserver(kill).observe(document.documentElement,{childList:true,subtree:true});})();
 (function(){function unblur(){document.querySelectorAll('div.wrapper').forEach(e=>{e.style.filter='none';e.style.webkitFilter='none';e.style.mozFilter='none';e.style.oFilter='none';e.style.msFilter='none';});}unblur();new MutationObserver(unblur).observe(document.documentElement,{attributes:true,childList:true,subtree:true});})();
 
-// LE PROGRES
+// LE PROGRES => all technic with didomi popup
 (function(){var iframes=[...document.querySelectorAll('iframe')];iframes.forEach(function(f){var s=f.getAttribute('src')||'';if(s.includes('ultimedia.com')||f.classList.contains('digitekaContent')){f.remove();}});})();
 (function(){document.body.classList.remove('didomi-popup-open');})();
 
-// LE CRABE
+// LE CRABE => all technic with abconsent div
 (function(){document.querySelectorAll('div[id^="__abconsent-cmp"]').forEach(e=>e.remove());})();
 (function(){document.documentElement.removeAttribute('class');})();
+(function(){var r=()=>document.querySelectorAll('div[id^="__abconsent-cmp"]').forEach(e=>e.remove());r();new MutationObserver(r).observe(document.body,{childList:true,subtree:true});})();
+(function(){var r=()=>document.documentElement.removeAttribute('class');r();new MutationObserver(r).observe(document.documentElement,{childList:true,subtree:true});})();
 
 // NOTE: Browsers from smartphones could have a different behavior. Scripts try to be as generic as possible.
 
