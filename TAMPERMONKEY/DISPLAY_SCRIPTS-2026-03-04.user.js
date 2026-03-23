@@ -2,7 +2,7 @@
 // @name         DISPLAY_SCRIPTS
 // @namespace    http://tampermonkey.net/
 // @version      2026-03-04
-// @description  try to take over the world!
+// @description  Display scripts loaded by a web page
 // @author       GrantHalf
 // @match        https://*/*
 // @match        http://localhost:8000/*
