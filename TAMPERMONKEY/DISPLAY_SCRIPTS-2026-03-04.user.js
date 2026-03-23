@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      2026-03-04
 // @description  try to take over the world!
-// @author       You
+// @author       GrantHalf
 // @match        https://*/*
 // @match        http://localhost:8000/*
 // @match        http://local.test:8000/*
