@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         DISPLAY_SCRIPTS
-// @namespace    http://tampermonkey.net/
+// @namespace    https://violentmonkey.github.io/
 // @version      2026-03-04
 // @description  Display scripts loaded by a web page
 // @author       GrantHalf
