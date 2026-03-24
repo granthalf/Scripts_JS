@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         OverloadDIVs
-// @namespace    https://violentmonkey.github.io/
+// @namespace    https://github.com/granthalf
 // @version      2026-03-09
 // @description  They force us for money, We fight these unconsented coockies locks for free (pro <<§ 39 lines 05/2020>>, revoqued by <<June 19th/20>>)
 // @author       GrantHalf
