@@ -16,7 +16,7 @@ Try with a browser in a mobile phone?
 
                                       SCRIPTS
 
-1. Directory {TAMPERMONKEY} => ACTIVATE SCRIPTS JS IN ORDRER TO CRAWL EASIER ON THE WEB
+1. Directory {VIOLENTMONKEY} => ACTIVATE SCRIPTS JS IN ORDRER TO CRAWL EASIER ON THE WEB
 
   A. HELLOWORLD-2026-03-04.user.js
     The Starter Script: when you activate it, it will dipslay a JS alert "hello" from any web page loaded.
