@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        DETECT_CMP
-// @namespace   https://violentmonkey.github.io/
+// @namespace   https://github.com/granthalf
 // @version     2026-03-12
 // @description Detect what is the CMP used in this website and what kind of cookies you will find on it.
 // @author      GrantHalf
