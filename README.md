@@ -11,12 +11,13 @@
 INSTALL VIOLENTMONKEY
 Use your fav browser (Edge? Firefox?) and search extension "Violentmonkey"
 Try with a browser in a mobile phone?
+Use Scripts described below.
 
 ---------------------------------------------------------------------------
 
                                       SCRIPTS
 
-1. Directory {VIOLENTMONKEY} => ACTIVATE SCRIPTS JS IN ORDRER TO CRAWL EASIER ON THE WEB
+1. Directory {MONKEY_SCRIPTS} => ACTIVATE SCRIPTS JS IN ORDRER TO CRAWL EASIER ON THE WEB (IN ANY 'MONKEY' EXTENSION)
 
   A. HELLOWORLD-2026-03-04.user.js
     The Starter Script: when you activate it, it will dipslay a JS alert "hello" from any web page loaded.
