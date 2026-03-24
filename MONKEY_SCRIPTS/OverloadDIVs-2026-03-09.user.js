@@ -50,6 +50,9 @@
 // LA DEPECHE
 (function(){var r=()=>document.querySelectorAll('div[id^="r-cookies-wall"]').forEach(e=>e.remove());r();new MutationObserver(r).observe(document.body,{childList:true,subtree:true});})();
 
+// LINGUEE
+(function(){var r=()=>document.querySelectorAll('div[id^="snigel-cmp-framework"]').forEach(e=>e.remove());r();new MutationObserver(r).observe(document.body,{childList:true,subtree:true});})();
+
 // NOTE: Browsers from smartphones could have a different behavior. Scripts try to be as generic as possible.
 
 // Other Websites "Cookies Wall" removed a div (only div, not cookies!!!) without any additional line for them.
