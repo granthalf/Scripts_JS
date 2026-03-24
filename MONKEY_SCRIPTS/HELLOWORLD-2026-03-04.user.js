@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         HELLOWORLD
-// @namespace    https://violentmonkey.github.io/
+// @namespace    https://github.com/granthalf
 // @version      2026-03-04
 // @description  My First Script!
 // @author       GrantHalf
