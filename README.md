@@ -8,8 +8,8 @@
 
                                       PREPARATION
 
-INSTALL TAMPERMONKEY
-Use your fav browser (Edge? Firefox?) and search extension "Tampermonkey"
+INSTALL VIOLENTMONKEY
+Use your fav browser (Edge? Firefox?) and search extension "Violentmonkey"
 Try with a browser in a mobile phone?
 
 ---------------------------------------------------------------------------
