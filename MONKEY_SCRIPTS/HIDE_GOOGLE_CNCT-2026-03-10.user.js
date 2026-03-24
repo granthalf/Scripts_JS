@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         HIDE_GOOGLE_CNCT
-// @namespace    https://violentmonkey.github.io/
+// @namespace    https://github.com/granthalf
 // @version      2026-03-10
 // @description  Hide a Google Connection
 // @author       GrantHalf
