@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         OVERLOAD_ZATAZ
-// @namespace    http://tampermonkey.net/
+// @namespace    https://violentmonkey.github.io/
 // @version      2026-03-04
 // @description  Nothing makes Damien to force him to publish articles on the Web: so, don't force us advs, we only want to visit a clean web page, thx!
 // @author       GrantHalf
