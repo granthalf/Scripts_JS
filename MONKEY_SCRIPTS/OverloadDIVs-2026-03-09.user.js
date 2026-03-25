@@ -5,6 +5,7 @@
 // @description  They force us for money, We fight these unconsented coockies locks for free (pro <<§ 39 lines 05/2020>>, revoqued by <<June 19th/20>>)
 // @author       GrantHalf
 // @match        https://*/*
+// @exclude-match https://youtube.com/*
 // @icon         data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCiAgPHJlY3QgeD0iNiIgeT0iOCIgd2lkdGg9IjUyIiBoZWlnaHQ9IjM4IiByeD0iNiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjNjY2IiBzdHJva2Utd2lkdGg9IjIiLz4KCiAgPHJlY3QgeD0iNiIgeT0iOCIgd2lkdGg9IjUyIiBoZWlnaHQ9IjEwIiByeD0iNiIgZmlsbD0iIzUwMTFGQSIvPgoKICA8cmVjdCB4PSI0OCIgeT0iMTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHJ4PSIyIiBmaWxsPSIjZmY1NTU1IiBzdHJva2U9IiNhYTAwMDAiIHN0cm9rZS13aWR0aD0iMSIvPgoKICA8bGluZSB4MT0iOCIgeTE9IjYiIHgyPSI1NiIgeTI9IjQ4IiBzdHJva2U9IiNmZjAwMDAiIHN0cm9rZS13aWR0aD0iOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGxpbmUgeDE9IjU2IiB5MT0iNiIgeDI9IjgiIHkyPSI0OCIgc3Ryb2tlPSIjZmYwMDAwIiBzdHJva2Utd2lkdGg9IjkiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgoKPC9zdmc+
 
 // @grant        none
