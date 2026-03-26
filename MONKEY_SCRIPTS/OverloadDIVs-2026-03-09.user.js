@@ -44,7 +44,6 @@
 
 // LE CRABE => all technic with abconsent div
 (function(){document.querySelectorAll('div[id^="__abconsent-cmp"]').forEach(e=>e.remove());})();
-(function(){document.documentElement.removeAttribute('class');})();
 (function(){var r=()=>document.querySelectorAll('div[id^="__abconsent-cmp"]').forEach(e=>e.remove());r();new MutationObserver(r).observe(document.body,{childList:true,subtree:true});})();
 (function(){if(location.hostname!=="lecrabeinfo.net")return;const r=()=>document.documentElement.removeAttribute("class");r();new MutationObserver(r).observe(document.documentElement,{childList:true,subtree:true});})();
 
