@@ -31,12 +31,13 @@
 // L EQUIPE
 (function(){var k=setInterval(function(){document.documentElement.classList.remove('no-scroll');var i=document.getElementById('island-8');if(i&&i.parentNode)i.parentNode.removeChild(i);var b=document.getElementById('OfferBanner');if(b&&b.parentNode)b.parentNode.removeChild(b);},400);setTimeout(function(){clearInterval(k);},30000);})();
 (function(){var k=setInterval(function(){document.documentElement.classList.remove('no-scroll');var i=document.getElementById('island-7');if(i&&i.parentNode)i.parentNode.removeChild(i);var b=document.getElementById('OfferBanner');if(b&&b.parentNode)b.parentNode.removeChild(b);},400);setTimeout(function(){clearInterval(k);},30000);})();
-(function(){function kill(){document.querySelectorAll('[class*="player"]').forEach(e=>e.remove());}kill();new MutationObserver(kill).observe(document.documentElement,{childList:true,subtree:true});})();
+(function(){function kill(){if(!location.hostname.endsWith("larousse.fr"))returndocument.querySelectorAll('[class*="player"]').forEach(e=>e.remove());}kill();new MutationObserver(kill).observe(document.documentElement,{childList:true,subtree:true});})();
 
 // LAROUSSE => all technic with onetrust
 (function(){document.querySelectorAll('#poool-widget,div[id^="poool"],div[class*="p3-"]').forEach(e=>e.remove());})();
 (function(){function kill(){document.querySelectorAll('#onetrust-banner-sdk,#onetrust-banner-sdk,[id*="onetrust"],[class*="onetrust"],[class^="ot-"],[class*=" ot-"]').forEach(e=>e.remove());}kill();new MutationObserver(kill).observe(document.documentElement,{childList:true,subtree:true});})();
-(function(){function unblur(){document.querySelectorAll('div.wrapper').forEach(e=>{e.style.filter='none';e.style.webkitFilter='none';e.style.mozFilter='none';e.style.oFilter='none';e.style.msFilter='none';});}unblur();new MutationObserver(unblur).observe(document.documentElement,{attributes:true,childList:true,subtree:true});})();
+(function(){function unblur(){if(!location.hostname.endsWith("larousse.fr"))return;document.querySelectorAll("div.wrapper").forEach(e=>{e.style.filter="none";e.style.webkitFilter="none";e.style.mozFilter="none";e.style.oFilter="none";e.style.msFilter="none"})}unblur();new MutationObserver(unblur).observe(document.documentElement,{attributes:true,childList:true,subtree:true})})();
+
 
 // LE PROGRES => all technic with didomi popup
 (function(){var iframes=[...document.querySelectorAll('iframe')];iframes.forEach(function(f){var s=f.getAttribute('src')||'';if(s.includes('ultimedia.com')||f.classList.contains('digitekaContent')){f.remove();}});})();
@@ -45,7 +46,7 @@
 // LE CRABE => all technic with abconsent div
 (function(){document.querySelectorAll('div[id^="__abconsent-cmp"]').forEach(e=>e.remove());})();
 (function(){var r=()=>document.querySelectorAll('div[id^="__abconsent-cmp"]').forEach(e=>e.remove());r();new MutationObserver(r).observe(document.body,{childList:true,subtree:true});})();
-(function(){if(location.hostname!=="lecrabeinfo.net")return;const r=()=>document.documentElement.removeAttribute("class");r();new MutationObserver(r).observe(document.documentElement,{childList:true,subtree:true});})();
+(function(){if(!location.hostname.endsWith("lecrabeinfo.net"))return;const r=()=>document.documentElement.removeAttribute("class");r();new MutationObserver(r).observe(document.documentElement,{childList:true,subtree:true});})();
 
 // LA DEPECHE
 (function(){var r=()=>document.querySelectorAll('div[id^="r-cookies-wall"]').forEach(e=>e.remove());r();new MutationObserver(r).observe(document.body,{childList:true,subtree:true});})();
