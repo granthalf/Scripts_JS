@@ -36,6 +36,9 @@ Use Scripts described below.
   E. DETECT_CMP-2026-03-12.user.js
     The Cookie-Informations Script: when you activate it, it will display informations about the CMP detected and all we can find from cookies used by the website.
 
+  F. FLUSH_COOKIES-2026-03-26.user.js
+    The Flush-Cookies Script: when you activate it, you click on logo then it deletes cookies from any vendor listed (CMP). Need check if it works well (as script to detect with a "before/after").
+
 
 
 ---------------------------------------------------------------------------
