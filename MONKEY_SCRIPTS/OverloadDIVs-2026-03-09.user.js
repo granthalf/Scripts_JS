@@ -6,7 +6,6 @@
 // @author       GrantHalf
 // @match        https://*/*
 // @exclude-match https://youtube.com/*
-// @exclude-match https://discord.com/*
 // @icon         data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCiAgPHJlY3QgeD0iNiIgeT0iOCIgd2lkdGg9IjUyIiBoZWlnaHQ9IjM4IiByeD0iNiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjNjY2IiBzdHJva2Utd2lkdGg9IjIiLz4KCiAgPHJlY3QgeD0iNiIgeT0iOCIgd2lkdGg9IjUyIiBoZWlnaHQ9IjEwIiByeD0iNiIgZmlsbD0iIzUwMTFGQSIvPgoKICA8cmVjdCB4PSI0OCIgeT0iMTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHJ4PSIyIiBmaWxsPSIjZmY1NTU1IiBzdHJva2U9IiNhYTAwMDAiIHN0cm9rZS13aWR0aD0iMSIvPgoKICA8bGluZSB4MT0iOCIgeTE9IjYiIHgyPSI1NiIgeTI9IjQ4IiBzdHJva2U9IiNmZjAwMDAiIHN0cm9rZS13aWR0aD0iOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGxpbmUgeDE9IjU2IiB5MT0iNiIgeDI9IjgiIHkyPSI0OCIgc3Ryb2tlPSIjZmYwMDAwIiBzdHJva2Utd2lkdGg9IjkiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgoKPC9zdmc+
 
 // @grant        none
@@ -47,7 +46,7 @@
 (function(){document.querySelectorAll('div[id^="__abconsent-cmp"]').forEach(e=>e.remove());})();
 (function(){document.documentElement.removeAttribute('class');})();
 (function(){var r=()=>document.querySelectorAll('div[id^="__abconsent-cmp"]').forEach(e=>e.remove());r();new MutationObserver(r).observe(document.body,{childList:true,subtree:true});})();
-(function(){var r=()=>document.documentElement.removeAttribute('class');r();new MutationObserver(r).observe(document.documentElement,{childList:true,subtree:true});})();
+(function(){if(location.hostname!=="lecrabeinfo.net")return;const r=()=>document.documentElement.removeAttribute("class");r();new MutationObserver(r).observe(document.documentElement,{childList:true,subtree:true});})();
 
 // LA DEPECHE
 (function(){var r=()=>document.querySelectorAll('div[id^="r-cookies-wall"]').forEach(e=>e.remove());r();new MutationObserver(r).observe(document.body,{childList:true,subtree:true});})();
