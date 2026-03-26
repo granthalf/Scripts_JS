@@ -9,5 +9,8 @@
 // @grant        none
 // ==/UserScript==
 
-(function(){function h(){var e=document.getElementById('credentials-picker-container');if(e){e.style.setProperty('display','none','important');e.style.setProperty('visibility','hidden','important');e.style.setProperty('opacity','0','important');}}h();if(!document.getElementById('cpchide-style')){var s=document.createElement('style');s.id='cpchide-style';s.textContent='#credentials-picker-container{display:none!important;visibility:hidden!important;opacity:0!important;}';document.documentElement.appendChild(s);}if(!window.__cpObs){window.__cpObs=new MutationObserver(h);window.__cpObs.observe(document.documentElement,{childList:true,subtree:true});}})();
+// Display a text to use extension to block a closed DOM before it come injected in the page visited
+(function(){var ok=[...document.scripts].some(s=>s.src.includes("accounts.google.com/gsi/client"));if(ok){var d=document.createElement('div');d.textContent='Script Google One-Tap detected : << // google closed DOM popup  ||accounts.google.com/gsi/iframe* >> is need to add inside the Extension "uBlock Origin"';d.style='position:fixed;top:0;left:0;margin:10px;padding:15px;background:#555;color:#fff;font-size:16px;font-weight:bold;z-index:2147483647;border-radius:6px;box-shadow:0 0 10px #000;pointer-events:none;';document.body.appendChild(d);setTimeout(()=>d.remove(),3000);}else{console.log("Script GSI non détecté");}})();
 
+// Try to overload the call to this function in order to disable it (CORS request failed)
+(function(){console.log([...document.scripts].some(s=>s.src.includes("accounts.google.com/gsi/client"))?"GSI client détecté":"GSI client NON détecté");})();
