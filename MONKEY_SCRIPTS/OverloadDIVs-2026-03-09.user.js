@@ -63,6 +63,13 @@
 (function(){function nukeDoc(d){try{d.querySelectorAll('#vzFloat,.vz-float,[id*="vz"],[class*="zataz-yt-float"]').forEach(el=>el.remove());}catch(e){}}function deepScan(win){try{nukeDoc(win.document);}catch(e){}var frames;try{frames=win.frames;}catch(e){return;}for(var i=0;i<frames.length;i++){try{deepScan(frames[i]);}catch(e){}}}function loop(){deepScan(window);}setInterval(loop,1000);loop();})();
 (function(){function kill(){document.querySelectorAll('[class*="fc-consent-root"]').forEach(e=>e.remove());}kill();new MutationObserver(kill).observe(document.documentElement,{childList:true,subtree:true});})();
 
+//RASPBERRY FR
+(function(){var o=document.createElement;document.createElement=function(t){var e=o.call(document,t);if(t==="script"){Object.defineProperty(e,"src",{set:function(v){if(v==="https://cmp.inmobi.com/tcfv2/56/cmp2ui-fr.js")return;this.setAttribute("src",v);}});}return e;};})();
+(function(){var o=document.createElement;document.createElement=function(t){var e=o.call(document,t);if(t==="script"){Object.defineProperty(e,"src",{set:function(v){if(v==="https://cmp.inmobi.com/tcfv2/56/cmp2.js")return;this.setAttribute("src",v);}});}return e;};})();
+(function(){var o=document.createElement;document.createElement=function(t){var e=o.call(document,t);if(t==="script"){Object.defineProperty(e,"src",{set:function(v){if(v==="https://forum.raspberry-pi.fr/rgpd.js")return;this.setAttribute("src",v);}});}return e;};})();
+(function(){var o=document.createElement;document.createElement=function(t){var e=o.call(document,t);if(t==="script"){Object.defineProperty(e,"src",{set:function(v){if(v==="/rgpd.js")return;this.setAttribute("src",v);}});}return e;};})();
+(function(){function w(n){if(!n)return;if(n.querySelectorAll)n.querySelectorAll('iframe[name="__tcfapiLocator"]').forEach(e=>e.remove());if(n.shadowRoot)w(n.shadowRoot);n.childNodes.forEach(w);}function r(){w(document);}r();new MutationObserver(r).observe(document.documentElement,{childList:true,subtree:true});})();
+
 
 // ------------------------------------------------------------------------------------------------
 // |            To block technology coming from closed DOM
