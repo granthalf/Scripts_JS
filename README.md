@@ -17,6 +17,12 @@ Use Scripts described below.
 Some Scripts are set by default to use in a local environement (as localhost).
 Set a Python Server (see Notes in ressources if needed) and afer you will see the scripts.
 
+To create a bookmarklet, sometimes AI generates a full code.
+Cut it into multi parts.
+And then, compact this code into one line:
+Use Notepad++ and Replace as Find="\r\n|\n|\r" | Replace="" | Regular Expression
+Then click as many as needed with the two-spaces-for-one Find="  " | Replace=" " | Regular Expression
+
 ---------------------------------------------------------------------------
 
                                       SCRIPTS
