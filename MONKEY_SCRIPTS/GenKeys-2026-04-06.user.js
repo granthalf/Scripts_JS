@@ -2,9 +2,8 @@
 // @name         GenKeys
 // @namespace    https://github.com/granthalf
 // @version      2026-04-04
-// @description  Generate Dual PEM Keys
+// @description  Generate Dual PEM Keys (to use inside CryptText!)
 // @author       GrantHalf
-// @match        https://*/*
 // @match        http://127.0.0.1:8000/*
 // @match        http://localhost:8000/*
 // @exclude-match https://youtube.com/*

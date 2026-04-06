@@ -2,7 +2,7 @@
 // @name         Display_PrivKeyViewer
 // @namespace    https://github.com/granthalf
 // @version      2026-04-04
-// @description  Crypt a text with a RSA technology
+// @description  Display a Private Key Informations (not everything!)
 // @author       GrantHalf
 // @match        http://127.0.0.1:8000/*
 // @match        http://localhost:8000/*
