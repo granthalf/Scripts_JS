@@ -58,6 +58,8 @@ Then click as many as needed with the two-spaces-for-one Find="  " | Replace=" "
   I. Display_PrivKeyViewer-2026-04-06.user.js
     The Viewer of a Private Key File Script: when you activate it, you watch informations about this file. Not evrything but at least if the file could be laoded by Scripts.
 
+  J. DisplayClocks-2026-04-07.user.js
+    The Display for many Clocks Script: when you activate it, you watch all Clocks you choose around the World. Useful to synchronize times for working with differents people.
 
 
 ---------------------------------------------------------------------------
